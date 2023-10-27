@@ -2,11 +2,11 @@
 - hosts: XR
   gather_facts: no
   connection: ansible.netcommon.network_cli
-  
+
   tasks:
   - name: Cambiando el hostname 
     cisco.iosxr.iosxr_hostname:
-    config:
-      hostname: XR-ANSIBLE
-    state: merged
+      config:
+        hostname: XR-ANSIBLE
+      state: merged
     
