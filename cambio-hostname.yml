@@ -7,6 +7,6 @@
   - name: Cambiando el hostname 
     cisco.iosxr.iosxr_hostname:
       config:
-        hostname: XR-ANSIBLE
+        hostname: XRV
       state: merged
     
