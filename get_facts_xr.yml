@@ -9,3 +9,10 @@
     register: iosxr_data
   - debug:
         var: iosxr_data  # Muestra la salida de la tarea "iosxr_facts"
+
+  - name: Apply the provided configuration
+    cisco.iosxr.iosxr_hostname:
+    config:
+      hostname: XR-ANSIBLE
+    state: merged
+    
